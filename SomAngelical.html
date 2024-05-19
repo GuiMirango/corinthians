@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Som Angelical - Sport Clube Corinthians Paulista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/SomAngelical.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="img/todos escudos.jpg" alt="Logos do Corinthians" class="header-logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="SomAngelical.html">Som Angelical</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="img/corinthians-logo-0.png" alt="Logo do Corinthians" class="logo">
+            <h1>Sport Club Corinthians Paulista</h1>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h2>O som do paraíso</h2>
+                <div class="button-container">
+                    <button id="play-hino" class="play-button">
+                        <span id="play-icon" class="play-icon">&#9658;</span> <!-- Ícone de play -->
+                    </button>
+                </div>
+                <audio id="hino-corinthians">
+                    <source src="aud/Hino do corinthians.mp3" type="audio/mpeg">
+                </audio>
+                <div id="letra-hino" class="letra-hino">
+                    <p>Salve o Corinthians</p>
+                    <p>O campeão dos campeões</p>
+                    <p>Eternamente</p>
+                    <p>Dentro dos nossos corações</p>
+                    <hr>
+                    <p>Salve o Corinthians</p>
+                    <p>De tradições e glórias mil</p>
+                    <p>Tu és orgulho</p>
+                    <p>Dos desportistas do Brasil</p>
+                    <hr>
+                    <p>Teu passado é uma bandeira</p>
+                    <p>Teu presente é uma lição</p>
+                    <p>Figuras entre os primeiros</p>
+                    <p>Do nosso esporte bretão</p>
+                    <hr>
+                    <p>Corinthians grande</p>
+                    <p>Sempre altaneiro</p>
+                    <p>És do Brasil</p>
+                    <p>O clube mais brasileiro</p>
+                    <hr>
+                    <p>Salve o Corinthians</p>
+                    <p>O campeão dos campeões</p>
+                    <p>Eternamente</p>
+                    <p>Dentro dos nossos corações</p>
+                    <hr>
+                    <p>Salve o Corinthians</p>
+                    <p>De tradições e glórias mil</p>
+                    <p>Tu és orgulho</p>
+                    <p>Dos desportistas do Brasil</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 | Guilherme Oliveira dos Santos (ADS)</p>
+    </footer>
+
+    <script>
+        document.getElementById('play-hino').addEventListener('click', function () {
+            var hino = document.getElementById('hino-corinthians');
+            var letra = document.getElementById('letra-hino');
+            var playIcon = document.getElementById('play-icon');
+
+            if (hino.paused) {
+                hino.play();
+                letra.style.display = 'block';
+                playIcon.innerHTML = '&#10074;&#10074;'; // Ícone de pausar
+            } else {
+                hino.pause();
+                letra.style.display = 'none';
+                playIcon.innerHTML = '&#9658;'; // Ícone de play
+            }
+        });
+    </script>
+</body>
+
+</html>
