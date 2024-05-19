@@ -1,0 +1,142 @@
+/* styles-som-angelical.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-logo {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400; 
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 700; /* Negrito */
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 300; /* Fina */
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.play-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #444;
+}
+
+.letra-hino {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.letra-hino p {
+    font-size: 16px;
+    font-weight: 300; /* Fina */
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Ocupa o espaço restante na parte inferior */
+    flex-shrink: 0; /* Evita que o rodapé encolha quando o conteúdo da página é grande */
+}
